@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>My website</title>
+</head>
+<body>
+  <header>
+    <h1>Developer's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi my name is Austin. I am located in Moncotn NB. I love animal and travel.</p>
+    <img src="/assets/images/avatar.jpg" alt="Developer's Avatar">
+  </section>
+
+  <section id="work">
+    <h2>My Work</h2>
+    <div class="work-images">
+      <a href="google.ca"><img src="/assets/images/app1.jpg" alt="Application 1"></a>
+      <a href="cnn.com"><img src="/assets/images/app2.jpg" alt="Application 2"></a>
+      <a href="youtube.com"><img src="/assets/images/app3.jpg" alt="Application 3"></a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+      <ul>
+        <li><a href="email">abcd@gmail.com</a></li>
+        <li><a href="phone">+1506999555</a></li>
+      </ul>
+  </section>
+
+  <script>
+    // JavaScript to handle smooth scrolling
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    const navigationLinks = document.querySelectorAll('nav a');
+
+navigationLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+  </script>
+</body>
+</html>
