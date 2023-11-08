@@ -1,0 +1,108 @@
+.header nav {
+  margin-right: 25px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+  nav {
+      display: block;
+  }
+  .header {
+      padding: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: #2a607c;
+      color: #ffffff;
+  }
+
+  .header nav ul {
+      list-style-type: none;
+  }
+
+  .header nav ul li {
+      display: inline-block;
+      margin-left: 25px;
+  }
+
+  a {
+      color: #ffffff;
+      text-decoration: none;
+  }
+  .avatar header{
+      text-align: center;
+      background: #13293d;
+      color: #fff;
+      position:absolute;
+      left: 100px;
+  }
+  .avatar img {
+      max-height: 500px;
+  }
+
+
+  .work-gallery img {
+      max-height: 400px;
+  }
+  .work-gallery header{
+      text-align: center;
+      background: #13293d;
+      color: #fff;;
+      left: 200px;
+      font-size: 30px;
+  }
+
+/* contact part */
+
+  .contact nav {
+      margin-right: 25px;
+      float: right;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+      display: block;
+  }
+
+  .contact {
+      padding: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: #2a607c;
+      color: #ffffff;
+  }
+
+  .contact nav ul {
+      list-style-type: none;
+  }
+
+  .contact nav ul li {
+      display: inline-block;
+      margin-left: 25px;
+  }
+}
+  /* Default styles for all screen sizes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styles for screens smaller than 768px */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    a {
+      color: #0c0b0b;
+    }
+  }
+  
+  /* Styles for screens larger than 1200px */
+  @media (min-width: 1200px) {
+    .container {
+      padding: 40px;
+    }
+  }
