@@ -44,8 +44,18 @@
   .avatar img {
       max-height: 500px;
   }
+  #feature-project{
+    width:95%;
+  }
+  .project-work{
+    width:30%;
+  max-width:33%;
+  }
 
-
+  .work-gallery{
+    display:flex;
+    
+ }
   .work-gallery img {
       max-height: 400px;
   }
