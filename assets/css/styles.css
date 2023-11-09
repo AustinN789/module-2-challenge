@@ -39,14 +39,14 @@
       background: #13293d;
       color: #fff;
       position:absolute;
-      left: 100px;
+      left: 400px;
   }
   .avatar img {
-      max-height: 500px;
+      max-height: 400px;
+      width:85%;
+      position: center;
   }
-  #feature-project{
-    width:95%;
-  }
+
   .project-work{
     width:30%;
   max-width:33%;
@@ -92,27 +92,25 @@
       display: inline-block;
       margin-left: 25px;
   }
-}
-  /* Default styles for all screen sizes */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+
+  @media screen and (max-width: 992px) {
+    .work-gallery {
+      width: 50%;
+    }
+    /* Change the header color */
+    header {
+      background: #772014;
+    }
   }
   
-  /* Styles for screens smaller than 768px */
+  /* Cards are stacked on top of each other at 768px or smaller */
   @media screen and (max-width: 768px) {
-    .container {
-      padding: 10px;
+    .work-gallery {
+      width: 100%;
     }
-    a {
-      color: #0c0b0b;
+    /* Change the header color */
+    header {
+      background: #8ac4ff;
     }
   }
   
-  /* Styles for screens larger than 1200px */
-  @media (min-width: 1200px) {
-    .container {
-      padding: 40px;
-    }
-  }
