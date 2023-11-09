@@ -51,11 +51,13 @@
   max-width:37%;
   flex:1;
   flex-basis:50%;
+  margin:2px;
   }
 /* body images */
   .work-gallery{
     display:flex;
     flex-wrap:wrap;
+    margin:2px;
     
  }
   .work-gallery img {
@@ -96,24 +98,18 @@
       margin-left: 25px;
   }
 /* media screen */
-  @media screen and (max-width: 692px) {
-    .project-work {
-      width: 100%;
-    }
-    /* Change the header color */
-    .work-gallery header {
-      background: #772014;
-    }
+@media screen and (max-width: 980px) {
+  navbar {
+    justify-content: center;
+    text-align: center;
   }
   
   /* Cards are stacked on top of each other at 768px or smaller */
-  @media screen and (max-width: 468px) {
-    .project-work {
+  @media screen and (max-width: 768px) {
+    body {
       width: 100%;
+    .work-gallery img {
+      width:100%;
     }
-    /* Change the header color */
-    .work-gallery header {
-      background: #8ac4ff;
     }
-  }
   
