@@ -46,13 +46,13 @@
       width:85%;
       position: center;
   }
-
+/* class*/
   .project-work{
   max-width:37%;
   flex:1;
-  flex-basis:100%;
+  flex-basis:50%;
   }
-
+/* body images */
   .work-gallery{
     display:flex;
     flex-wrap:wrap;
@@ -95,7 +95,7 @@
       display: inline-block;
       margin-left: 25px;
   }
-
+/* media screen */
   @media screen and (max-width: 692px) {
     .project-work {
       width: 100%;
